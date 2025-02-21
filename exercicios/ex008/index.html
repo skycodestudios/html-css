@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase tems um <b>termo em negrito</b> usando a tag B (não semântica)</p>
+    <!-- Usar prefericalmente sempre essa forma semântica de escrita para digamos negrito usando a tag <strong> conforme exemplo abaixo -->
+    <p>Nessa frase temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <!-- Para colocar uma tag entre um texto já escrito, basta selecionar o texto que desejamos ou trecho que desejamos e usar os comandos crtl+shift+p digitar abb selecionar wrap e depois digitar a tecla ou tag desejada, uma vez feito o abb, já não precisamos mais digitar abb, pois o wrap já aparecerá em primeiro como sugestão -->
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag i (não semântica)</p>
+    <!-- Usar preferencialmente sempre essa forma semântica de escrita para digamos itálico usando a tag <em> conforme exemplo abaixo -->
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <h2>Texto marcado</h2>
+    <!-- Abaixo três texto exemplo de como colocar a marcação com a tag <mark>
+        no primeiro o padrão vem em amarelo
+        no segundo usei o parâmetro style="background-color: lime", e no terceiro usei o mesmo parâmetro porém coloquei o mouse em cima do quadrado verde e subiu um poup-up e com isso pude ajustar a cor através do RGB -->
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag mark</p>
+    <p>Podemos criar também <mark style="background-color: lime;">um texto marcado</mark> usando a tag mark.</p>
+    <p>Podemos criar também <mark style="background-color: rgb(12, 96, 12);">um texto marcado</mark> usando a tag mark.</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando <big>um texto grande</big> e <small>um texto pequeno</small> nesse parágrafo.</p>
+
+    <h2>Texto deletado</h2>
+    <!-- Essa tag <del> indicada para riscar sobre o texto -->
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <!-- Essa tag <ins> indicada para dar ênfase a algo inserido ou insira um texto aqui -->
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase que ele foi adicionado depois.</p>
+
+    <p>Existe também o <u>sublinhado</u> com a tag u (não semântica)</p>
+
+    <h2>Texto sobrescrito</h2>
+    <!-- Para usar algo como elevado a potência usamos a tag <sup> como exemplo abaixo -->
+    <p>Para inseriri coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subescrito</h2>
+    <!-- Para usar algo como subescrito como fórmula da água usamos a tag <sub> como exemplo abaixo -->
+    <p>Pra inserir coisas do tipo H<sub>2</sub>O</p>
+
+</body>
+</html>

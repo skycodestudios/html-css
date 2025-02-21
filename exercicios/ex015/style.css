@@ -1,0 +1,24 @@
+@charset "UFT-8";
+/* @charset "UTF-8";    É uma regra, as regras começas com @ arroba, serve nesse caso para informar possíveis acentos e cidilhas no texto, para dar compatibilidade */
+
+
+body{
+    /* background-color muda cor de fundo, font-family muda tipo da fonte, font-size muda tamanho, text-aling justify estou alinhando texto */
+    background-color: lightgoldenrodyellow; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: lightcoral;
+    background-color: rgb(59, 44, 26);
+
+}
+h2{
+    color: darkred;
+
+}
+p{
+    text-align: justify;
+    
+
+}

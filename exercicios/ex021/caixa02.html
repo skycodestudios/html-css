@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+
+        }
+        article > aside{
+            background-color: rgb(165, 165, 165);
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- A tag <header> é como uma <div> porém com semântica de cabeçalho -->
+    <header>
+        <h1>Meu site</h1>
+        <!-- A tag <nav> é como uma <div> porém com semântica de navegação / menu -->
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <!-- A tag <main> é como uma <div> porém com semântica de conteudo principal -->
+    <main>
+        <!-- A tag <section> é como uma <div> porém com semântica de seção -->
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+
+        <section id="noticias">
+            <!-- A tag <article> é como uma <div> porém com semântica de artigo -->
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis debitis suscipit dolorum saepe enim consectetur ad hic quod similique dolorem, fuga at error ducimus, fugiat impedit molestiae, sequi porro expedita!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+
+        </section>
+    </main>
+    <!-- A tag <footer> é como uma <div> porém com semântica de rodapé -->
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>

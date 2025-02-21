@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2 ?family=Work+sans:ital,wght@0,100;0,200;0,300;0,400;1,500;1,600;1,700;1,800;1,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+       body {
+            /* No exemplo abaixo colocamos a font-family: Arial, Helvetica, sans-serif   o próprio sistema oferece uma combinação de mais de uma fonte, e caso o navegador não tenha uma fonte ele tentará a próxima sendo assim na oredem arial depois helvetica, depois sans-serif, isso chama-se CSS WEB SAFE FONTES COMBINATIONS */
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif
+            /* 
+            Medidas Absolutas 
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, Vw, Vh, %
+            O padrão é 16px...1em é a mesma coisa que 16px, logo 2em é o dobro 32px....o bom do em é que trata-se de porcentagem relativa então se adapta melhor a display de diferentes tamanhos
+            */
+
+            
+            
+            
+            /* Exemplo abaixo:
+
+                font-size: 1em;
+
+                font-weight: bolder;
+                "weight= peso    width=largura    height= altura"
+               " lighter normal bold bolder "
+
+                font-style: italic;
+                
+                text-decoration: underline;
+
+                shorthand font
+                font-style -> font-weight -> font-size-> font-family
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem veniam officia quod aspernatur quia qui voluptatum? Excepturi, rem sapiente quia voluptates enim, velit, placeat aliquam impedit vitae ad iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi harum omnis pariatur rem praesentium magnam id molestiae tempore eius ipsa sit dolorum consectetur velit qui placeat, sapiente consequuntur ullam assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut dolore beatae blanditiis? Hic mollitia provident animi perspiciatis corporis culpa sed pariatur, consequuntur omnis quia illum minus, eius consequatur vel.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique modi a aperiam iste vitae laboriosam ullam nemo sed exercitationem possimus cum, at aliquam laudantium maiores animi quisquam inventore optio impedit?</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, expedita omnis, quaerat reprehenderit ab error impedit excepturi nobis ipsam deserunt nesciunt, cupiditate voluptatibus aut reiciendis laboriosam nihil dolorum quos possimus.</p>
+</body>
+</html>

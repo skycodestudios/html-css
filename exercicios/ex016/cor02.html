@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /* O código *{} asterisco mais chaves cham-se configuração global no CSS conforme exemplo abaixo */
+        *{
+            height: 100%;
+        }
+
+        body{
+            /* O código background-image: linear-gradient(to top, white, blue); pode ser usado para gerar gradiente de cor, podendo ser (to top ou to right ou to left ou to bottom...enfim cada um altera como é feito o gradiente, conforme o código comentado abaixo*/
+            /* background-image: linear-gradient(to bottom, white, blue); */
+
+
+
+
+            /* background-image: linear-gradient(to bottom, #0BE5B5, #38665C, #2B3C38); */
+            /* O código acima é um exemplo de gradiente usando mais de uma cor, e usando a ferramenta do adobe e usando hexadecimal */
+
+
+
+
+            background-image: linear-gradient(-45deg, #0BE5B5, #38665C, #2B3C38);
+            /* O código acima é um exemplo de gradiente com mais de uma cor e usando a ferramenta do adobe, usando cores em hexadecimal e ao invés de usar (to bottom etc... usamos em graus, e pode ser usado tanto positivo 45deg.... quanto negativo -45deg, conforme exemplo acima */
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

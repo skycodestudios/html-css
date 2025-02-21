@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando domument.getElementById("teste") é escrito em linguagem JavaScript.</p>
+    <!-- A tag abaixo <code> deixa as fontes nomo espassadas e da semântica ao texto, dando sentido como código, por isso code -->
+    <p>O comando <code>domument.getElementById("teste")</code> é escrito em linguagem JavaScript.</p>
+<!-- Mesmo com a tag <code> ele não considera a identação deixando o texto corrido uma palvra ao lado da outra conforme exemplo abaixo -->
+    <code>
+        num = int(input("Digite um número"))
+        if num % 2 == 0:
+            print(f"O número {num} é PAR)
+        else:
+            print(f"O número {num} é IMPAR)
+        print("Fim do programa")
+    </code>
+
+
+<!-- Para considerar a identação usa-se a tag <pre> conforme exemplo abaixo -->
+    <pre>
+        <code>
+        num = int(input("Digite um número"))
+        if num % 2 == 0:
+            print(f"O número {num} é PAR)
+        else:
+            print(f"O número {num} é IMPAR)
+        print("Fim do programa")
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <!-- Para colocar um frase como citação usa-se a tag <q> ao invés de uma simples aspas "" -->
+    <p>Como diria o api de um amigo: <q>O computador é um burro muito rápido</q>.</p>
+
+    <h2>Citações completas</h2>
+    <!-- Abaixo podemos ver uma citação com a tag <blockquote> uma citação em bloco que inclusive inclui um parágrafo, junto a isso usamos a parâmetro cite="" e dentro das aspas"" colocamos o indereço url de onde conseguimos a citação, isso ajuda as ferramentas de busca como o google a fazer suas referências. -->
+    <p>Segundo Andy Harris, no seu livro HTML, xHTML & CSS for DUMMIES:</p>
+    <blockquote cite="https://www.google.pt/books/edition/HTML_XHTML_and_CSS_All_In_One_For_Dummie/-LdlRI0fT_UC?hl=pt-BR&gbpv=1&dq=html&pg=PA123&printsec=frontcover">
+        Don't panic because you have errors. The mistakes often overlap, so one problem in your code often causes more than one error to pop up
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando HTML e CSS. Estou adorando!</p>
+    <!-- Abaixo usamos a tag <abbr title=""> dentro das aspas do parâmetros title="" preencho so siguinificado da abreviação. -->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <!-- Para escrever de forma invertida basta usar a tag <bdo dir="rtl"> o parâmetro dir="rtl" rtl indica da direita para esquerda, assim como o ltr indica da esquerda para direita -->
+    <p>Estou <bdo dir="rtl">aprendendo a criar coisas</bdo> em HTML.</p>
+    <p>Estou <bdo dir="ltr">aprendendo a criar coisas</bdo> em HTML.</p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{                           /*box-level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            /* Podemos mudar algo que é por padrão box-level para inline-leve e vice-versa....basta colocar display: block; para deixar em box-level ......e display: inline; para deixar em inline-level .... podemos também transformar um que por padrão é inline-level em display: inline-block dessa forma ele continua como inline-level, mas com algumas caracteristicas de box-level */
+
+            /* shorthand de border com width style color nesta ordem */
+            border: 10px solid darkslategray;
+
+            /* shorthand de padding deve seguir essa ordem top, right, bottom, left */
+            padding: 10px 10px 10px 10px; 
+
+            /* Podemos usar somente padding: 10px; como no exemplo abaixo caso gostariamos que fosse 10px em todos os lados */
+            /* padding: 10px; */
+
+            /* Podemos usar somente padding: 10px 20px; como no exemplo abaixo caso gostariamos que fosse 10px para top e bottom e 20px para right e left */
+            /* padding: 10px 20px; */
+
+
+
+            /* Para centralizar usamos margin: auto; dessa forma ele fica centralizado e segue automaticamente o tamanho do navegado */
+            /* margin: auto; */
+
+            /* O código abaixo representa uma shorthand de margin e ela deve seguir a ordem de top, right, bottom, left em resumo a mesma explicação para shorthand de padding se aplica aqui, como no exemplo abaixo */
+            margin: 30px auto 40px auto;
+            /* Para o exemplo acima conseguimos fazer com que ele se adpte automaticamente a qualquer tamanho de tela tanto para right quanto para left, pois escrevemos o código em shorthand usando a ordem correta de top, right, bottom, left, sendo assim colocamos auto tanto para right quanto para left */
+
+            
+            /* O código abaixo é um exemplo de shorthand de outline usando a ordem correta de width, style, color */
+            outline: 5px dashed salmon;
+
+        }
+        a{                     /*inline-level*/
+           
+            /* O exemplo abaixo é um shorthand de border seguindo a ordem correta de width, style, color */
+            border: 10px solid red;
+
+            /* O código abaixo é um exemplo de shorthand onde usamos um unico valor, e dessa forma o próprio sistema coloca os valores na ordem correta que é top, right, bottom, left */
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são eexmplos de caixa inline-level</a>. Vamos ver como tudo isso funciona. </p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!-- Para usar link devemos usar a tecnica de encapsulamento ctrl+shift+p usar a tag <a> e no parâmetro href="" entre as aspas "" colocamos o endereço URL completo, não podemos esquecer de usar o parâmetro target="_blanck" para abrir uma nova aba no navegador e não sobrepor o seu site, além disso devemos usar o parâmetro rel="external" que informa que se trata de um link externo conforme exemplo abaixo -->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositorio público no GitHub</a></p>
+    <!-- No exemplo abaixo com direcionamento para o youtube não usamos os parâmetros acima e isso faz com que o youtube se sobreponha no nosso site -->
+    <p>Você também pode acessar <a href="https://youtube.com/cursoemvideo/">canal gratuito no youtube</a></p>
+    
+    <h2>Usando links internos</h2>
+    <!-- Como não existe um parâmetro para internal...usamos o parâmetro rel="next" informando aos algoritimos dos buscadores como google que aquele link é de navegação para próxima página -->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next"> segunda página</a></p>
+        <!-- Também podemos usar a target="_self" para informar aos buscadores que aquele link refere-se para abrir na mesma aba -->
+    <p>Você também pode acessar a nossa página <a href="noticias/pag003.html" target="_self" rel="next"> página de notícias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <!-- Para deixar um link adicionado porém vazio, usamos o parâmetro href="#" dentro as aspas "" usamos hashitag #-->
+        <li><a href="livros/01 - História da Internet.pdf" target="_blank" type="application/pdf">Baixar o livro em PDF</a></li>
+        
+        <!-- Para links com download usamos os parâmetros download="" e nas aspas colocamos o nome do arquivo e sua extensão como por exemplo .zip ou .rar também usamos o parâmetro type=""e entre as aspas usamos o mais adequado consultando a lista correta em iana.org media types, basta consultar no google esse nome e ver a lista com os parâmetros corretos para cada tipo de arquivo -->
+        <li><a href="livros/01 - História da Internet.rar" download="01 - hostória da Internet.rar" type="application/rar">Livro compactado em .RAR</a></li>
+    </ul>
+
+</body>
+</html>

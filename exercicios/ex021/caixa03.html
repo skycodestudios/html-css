@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personaliada</title>
+    <style>
+        h1{
+            border: 20px solid black;
+            padding: 10px;
+            /* border-image-source: url(''); serve para adicionar uma imagem como borda, devemos usar o atalho ctrl+barra de espaço para adicionar o arquivo */
+            border-image-source: url('borda.png');
+            /* border-image-slice: 20; serve para cortar a imagem que foi adicionada como borda */
+            border-image-slice: 20;
+            /* border-image-repeat: repeat; serve para repeir a imagem, ou stretch para esticar a imagem  */
+            border-image-repeat: repeat;
+
+
+            /* Abaixo um exemplo de shorthand ficando assim border-image: url('') dentro das aspas simples usamos o atalho ctrl+barra de espaço para adicionar a imagem, depois colocamos o valos referente a border-image-slice: que foi 27 como no exemplo abaixo depois colocamos o valor de border-image-repeat: com o valor de repeat como no exemplo abaixo */
+            
+            /* border-image: url('borda.png') 27 repeat; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

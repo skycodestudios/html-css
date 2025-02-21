@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir ese site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <!-- A tag <picture> serve para trabalhar com mais de um tipo de tag <source> ou seja é um comjunto de tags <source media="" srcset="" type=""> -->
+    <picture>
+        <!-- A tag  <source media="" srcset="" type=""> usando o parâmetro media="" (max-width: ) serve para informar ao html para carregar outro tamanho e outro arquivo conforme informamos dentro do parâmetro srcset=""-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Importante é que sempre devemos subir de forma decrescnte conforme o exemplo  -->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+    </picture>
+    <!-- Como podemos ver no exemplo acima carregamos a tag <picture> depois carregamos a tag <img> nela subimos a nossa maior imagem em px, depois acima dessa tag subimos as tag <source: media: type:>, para carregar uma imagem menos, e acima outra tag <source : media: type:> menor ainda ......sempre de forma decrescente -->
+
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <!-- Para inserir um áudio usamos a tag <audio src="" controls autoplay> dentro do parâmetro src="" dentro das aspas "" usamos crtl+barra de espaço para apontar o caminho do arquivo após isso, colocamos os parâmetros controls autoplay para visualisar o controle de play do áudio -->
+        <audio src="media/guanacast-33.mp3" controls autoplay></audio>
+        <!-- Na verdade basta apenas o parâmetro controls -->
+<p></p>
+        <!-- A tag audio> serve para colocar um conjunto de tags <source>.....porém esse source é diferente do foto seria source: src  precisamos colocar o parâmetro controls para apresentar no navegador o botão play...o parâmetro loop serve para que ao final do áudio ele recomeçe que eu não sugiro-->
+        <audio preload="metadata" controls loop>
+            <source src="media/guanacast-33.mp3" type="audio/mpeg">
+            <source src="media/guanacast-33.wav" type="audio/wav">
+            <!-- Esste parágrafo abaixo serve para que caso o navegador não consiga reproduzir o áudio ele apresente essa mensagem com a possibilidade de download do arquivo de áudio -->
+            <p>Infelizmente seu navegador nao consegue reproduzir áudio. <a href="media/guanacast-33.mp3">Clique aqui para baixar o arquivo</a></p>
+        </audio>
+
+
+</body>
+</html>

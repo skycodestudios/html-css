@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+}
+main{
+    /* box-shadow: 5px 5px 15px #ac8a76df serviu para colocar sombreamento dando efeito 3d na caixa de texto, o primeiro 5px coloca sombra a direita, o segundo 5px está colocando sombra para baixo, o 15px está espalhando as sombras o ultimo que é a cor, refere-se a cor da sompra foi escolhido a mesma cor de fundo porém com ajuste de cor para mais escura e com alpha */
+    box-shadow: 5px 5px 15px #ac8a76df;
+    /* border-radius: 15px serviu para arredondar as bordas do fundo branco */
+    border-radius: 15px;
+    /* background-color: white serviu para colocarmos o fundo branco */
+    background-color: white;
+    /* width: 600px serviu para determinar a largura do texto em pixel */
+    width: 600px;
+    /* padding: 10px serviu para deixar uma "bordinha" de distância de 10 pixels */
+    padding: 10px;
+    /* margin: auto serviu para deixar o texto centralizado, independente do tamanho da tela */
+    margin: auto;
+}
+h1{
+    color: #F39209;
+    text-align: center;
+    text-shadow: 1px 1px 2px #a56306b7;
+}
+h2{
+    color: #125189;
+}
+
+p{
+    text-align: justify;
+}
