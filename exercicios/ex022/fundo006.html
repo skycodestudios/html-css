@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             /* height: 100vh; o valor 100vh serve para informar que a imagem ocupará 100% da viewport, usa-se vh ao invés de % */
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             /* Aprendendemos que no background-size: podemos usar cover; que siguinifica cobrir como um todo a viewport ou contain que ajusta de forma a ocupar a viewport mas precisamos testa para cada situação */
+            /*background-size: cover;
+            background-attachment: fixed;
+
+            /* shorthand - background 
+
+            Para fazer um shorthand dos background color,image,position, repeat, size,attachement deve seguir a ordem abaixo:
+                color > image > position > repeat > [size] > attachement
+            Para o [size] ele não pode fazer parte da linha do shorthand ele deve ser colocado a parte como no exemplo abaixo
+            
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
+            
 
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
