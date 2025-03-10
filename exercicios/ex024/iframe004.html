@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore dolores ea voluptas fugiat reprehenderit animi earum repellendus. Veritatis minima reiciendis quidem, incidunt officiis necessitatibus autem accusantium a, assumenda qui praesentium.</p>
+
+    <!-- No exemplo abaixo usamos o parâmetro sandbox="" e dentros das aspas usamos "sandbox", que é responsável por bloquear completamentamente o iframe protegendo de qualquer ataque -->
+
+    <!-- <iframe src="paginasextras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer">  -->
+
+        <!-- Seu navegador não é compatível com isso... -->
+
+    <!-- </iframe> -->
+
+    <!-- Já neste exemplo abaixo estamos permitindo páginas da mesma origem, permitindo formulários, e permitindo scripts deste iframe o resto fica bloqueado -->
+    <iframe src="paginasextras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+
+        Seu navegador não é compatível com isso...
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolorem adipisci neque unde odit, rem quas? Nesciunt voluptatem soluta animi qui inventore ab libero at harum. Consequuntur praesentium non maiores?</p>
+</body>
+</html>
